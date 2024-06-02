@@ -1,0 +1,110 @@
+/* Ensure full-screen background */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0A2A02;
+    overflow: hidden;
+}
+
+/* Container for fixed header and navbar */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    padding: 20px;
+    background-color: #0A2A02;
+    z-index: 1000;
+    margin-left:-110px;
+    
+}
+
+/* Container for the title */
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Scrollable content */
+.scrollable-content {
+    margin-top: 100px; /* Adjust this to the height of your header */
+    padding-right: 220px; /* Adjust this to the width of your navbar */
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100vh - 80px); /* Adjust this to the height of your header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:-100px;
+    
+    position: relative;
+}
+
+/* NavBar styling */
+.nav-container {
+    position: fixed;
+    right: 0;
+    top: 80px; /* Adjust this to the height of your header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Adjust width as needed */
+    height: calc(100vh - 80px); /* Adjust this to the height of your header */
+    background-color: #0A2A02;
+    padding: 10px;
+}
+
+/* Game box styles */
+.game-box-inn {
+    width: 90%;
+    max-width: 1100px;
+    height:700px;
+    padding: 80px;
+    background-color: #F1E48E;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: black solid 5px;
+    
+}
+
+.AMimage {
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to cover the container */
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid black; /* Specify the border color and width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top:20px;
+}
+
+.AMtext {
+    display: flex;
+    align-items: center; /* Align text vertically with the image */
+    padding: 20px;
+    text-align:justify;
+    margin-top:20px;
+}
+
+.AMtext p {
+    margin-left: 20px; /* Add some space between the image and text */
+    font-size: 22px; /* Adjust font size as needed */
+}
+
+
+
+
+
+
+
+
+
+
