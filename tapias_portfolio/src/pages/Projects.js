@@ -63,7 +63,7 @@ const Projects = () => {
                 <NavBar />
             </div>
             <div className="scrollable-content">
-                <div className="game-box-inn">
+                <div className="game-box-inn-projects">
                     <h1><u>InkLink:</u></h1>
                     <div className="AMtext">
                         
@@ -96,7 +96,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="game-box-inn">
+                <div className="game-box-inn-projects">
                     <h1><u>Clear Currents:</u></h1>
                     <div className="AMtext">
                        
@@ -130,7 +130,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="game-box-inn">
+                <div className="game-box-inn-projects">
                     <h1><u>Handheld gaming console:</u></h1>
                     <div className="AMtext">
                        

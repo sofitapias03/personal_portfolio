@@ -1,0 +1,11 @@
+.game-box-inn-projects {
+    width: 90%;
+    max-width: 1000px;
+    height:650px;
+    padding: 80px;
+    background-color: #F1E48E;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    border: black solid 5px;
+    
+}

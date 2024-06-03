@@ -1,7 +1,7 @@
 .tile {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   transition: transform 0.2s;
   background-color: #F1E48E;
@@ -20,8 +20,8 @@
 
 .tile-bottom {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: #F1E48E;
   color: #0A630E;
   text-align: center;
@@ -39,8 +39,8 @@
 
 .grid {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   margin: 1px;
   background-color: #0b3504;
@@ -53,7 +53,7 @@
 }
 
 .tile-content {
-  font-size: 50px; /* Adjust font size */
+  font-size: 35px; /* Adjust font size */
   margin-top: 20px;
 }
 
@@ -61,14 +61,14 @@
   position: absolute; /* Set position absolute */
   bottom: 5px;
   left: 10px;
-  font-size: 18px; /* Adjust font size */
+  font-size: 14px; /* Adjust font size */
   font-weight: bold;
 }
 
 .game-box {
   position: relative;
-  width: 1100px;
-  height: 500px;
+  width: 1000px;
+  height: 400px;
   padding: 80px; /* Adjust padding as needed */
   border: 10px solid #033906; /* Transparent border */
   padding-bottom: 120px;
@@ -81,8 +81,8 @@
 
 .grid-yellow {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   font-weight: bold;
   color:black;
@@ -98,8 +98,8 @@
 
 .grid-dblue {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   font-weight: bold;
   color:black;
@@ -115,8 +115,8 @@
 
 .grid-red {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   font-weight:bold;
   color:black;
@@ -135,8 +135,8 @@
 
 .grid-blue {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   margin:1px;
   background-color: #68eff1;
@@ -154,8 +154,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background-color: #F1E48E;
   border-radius: 10px;
   border: 5px solid black; /* Thicker border */
@@ -171,7 +171,7 @@
   position: absolute; /* Position absolute for precise placement */
   bottom: 5px;
   left: 5px; /* Adjust as needed */
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: #0a632c; /* Change color to match other numbers */
 }
@@ -180,7 +180,7 @@
   color: #0a632c;
   text-align: center;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 a {
@@ -194,6 +194,19 @@ a {
 .nav-tile:hover{
   transform: scale(1.20);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
