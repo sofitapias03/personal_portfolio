@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../Components/navBar';
 import Carousel from '../Components/carousel';
+import './Projects.css'
 import PR31 from '../Images/PR31.jpg';
 import PR32 from '../Images/PR32.jpg';
 import PR33 from '../Images/PR33.jpg';
