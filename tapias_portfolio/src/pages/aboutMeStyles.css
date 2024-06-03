@@ -2,8 +2,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     background-color: #0A2A02;
     overflow: hidden;
 }
@@ -13,7 +13,7 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center;
@@ -35,7 +35,7 @@ html, body {
     margin-top: 100px; /* Adjust this to the height of your header */
     padding-right: 220px; /* Adjust this to the width of your navbar */
     overflow-y: auto;
-    width: 100%;
+    width: 80%;
     height: calc(100vh - 80px); /* Adjust this to the height of your header */
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ html, body {
 
 /* Game box styles */
 .game-box-inn {
-    width: 90%;
+    width: 70%;
     max-width: 1100px;
     height:700px;
     padding: 80px;
