@@ -1,27 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../pages/homeStyles.css'; // Import the CSS file
+import '../pages/MobileNavBar.css';
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="nav-container">
-      <Link to="/aboutMe" className="nav-tile">
-        <div className='nav-tile-content'>About Me</div>
-        <div className='nav-tile-number'>10</div>
-      </Link>
-      <Link to="/Projects" className="nav-tile">
-        <div className='nav-tile-content'>Projects</div>
-        <div className='nav-tile-number'>14</div>
-      </Link>
-      <Link to="/Contact" className="nav-tile">
-        <div className='nav-tile-content'>Contact</div>
-        <div className='nav-tile-number'>9</div>
-      </Link>
-      <Link to="/" className="nav-tile">
-        <div className='nav-tile-content'>Home</div>
-        <div className='nav-tile-number'>8</div>
-      </Link>
-    </div>
+  <div className="nav-menu">
+  <div className="menu-text">Menu</div>
+  <button className="nav-toggle" onClick={toggleNav} style={{ fontSize: '80px' }}>
+    &#9776; {/* Hamburger icon */}
+  </button>
+</div>
+
+  <div className={`nav-links ${isOpen ? 'active' : ''}`}>
+    <Link to="/aboutMe" className="nav-item" onClick={toggleNav}>
+      About Me
+    </Link>
+    <Link to="/Projects" className="nav-item" onClick={toggleNav}>
+      Projects
+    </Link>
+    <Link to="/Contact" className="nav-item" onClick={toggleNav}>
+      Contact
+    </Link>
+    <Link to="/" className="nav-item" onClick={toggleNav}>
+      Home
+    </Link>
+  </div>
+</div>
+
   );
 };
 
