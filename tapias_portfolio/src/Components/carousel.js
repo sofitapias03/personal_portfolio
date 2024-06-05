@@ -17,16 +17,17 @@ const Carousel = ({ images }) => {
   return (
     <div className="carousel">
       <button className="prev" onClick={prevSlide}>
-        <div className="tile-content-button">Prev</div>
-        <div className="tile-number">1</div>
+        <div className="tile-content-button">&#x25C0;</div> {/* Unicode value for ◀ */}
+        
       </button>
-      <img src={images[currentIndex]} alt="carousel slide" />
+      <img className='carousel-img' src={images[currentIndex]} alt="carousel slide" />
       <button className="next" onClick={nextSlide}>
-        <div className="tile-content-button">Next</div>
-        <div className="tile-number">2</div>
+        <div className="tile-content-button">&#x25B6;</div> {/* Unicode value for ▶ */}
+        
       </button>
     </div>
   );
+  
 };
 
 export default Carousel;
