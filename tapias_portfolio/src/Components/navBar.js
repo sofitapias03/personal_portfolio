@@ -13,7 +13,7 @@ const NavBar = () => {
     <div className="nav-container">
   <div className="nav-menu">
   <div className="menu-text">Menu</div>
-  <button className="nav-toggle" onClick={toggleNav} style={{ fontSize: '80px' }}>
+  <button className="nav-toggle" onClick={toggleNav} style={{ fontSize: '80px', color:'#efe49f', marginRight:'-150px' }}>
     &#9776; {/* Hamburger icon */}
   </button>
 </div>
