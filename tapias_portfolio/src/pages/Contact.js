@@ -36,18 +36,7 @@ const Contact = () => {
                         <div className="tile-content">T</div>
                         <div className="tile-number">1</div>
                     </div>
-                    <div className="tile">
-                        <div className="tile-content"></div>
-                        <div className="tile-number">1</div>
-                    </div>
-                    <div className="tile">
-                        <div className="tile-content">M</div>
-                        <div className="tile-number">3</div>
-                    </div>
-                    <div className="tile">
-                        <div className="tile-content">E</div>
-                        <div className="tile-number">1</div>
-                    </div>
+                    
                 </div>
                 <NavBar />
             </div>
