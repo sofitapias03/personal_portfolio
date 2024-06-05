@@ -20,8 +20,8 @@ html, body {
     padding: 20px;
     background-color: #0A2A02;
     z-index: 1000;
-    margin-left:-110px;
-    
+    margin-left: -110px;
+    margin-right:10px;
 }
 
 /* Container for the title */
@@ -40,8 +40,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left:-100px;
-    
+    margin-left: 0px;
     position: relative;
 }
 
@@ -61,42 +60,100 @@ html, body {
 
 /* Game box styles */
 .game-box-inn {
-    width: 90%;
+    width: 80%; /* Make the width a bit smaller */
     max-width: 1000px;
-    height:400px;
-    padding: 80px;
+    padding: 20px; /* Adjust padding as needed */
     background-color: #F1E48E;
     border-radius: 20px;
     margin-bottom: 50px;
     border: black solid 5px;
-    
-}
-
-.AMimage {
-    width: 300px; /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
-    object-fit: cover; /* Crop the image to cover the container */
-    position: relative;
-    border-radius: 10px;
-    border: 2px solid black; /* Specify the border color and width */
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top:-10px;
 }
 
+/* About Me image */
+.AMimage {
+    width: 100%; /* Responsive width */
+    max-width: 300px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image to cover the container */
+    border-radius: 10px;
+    border: 2px solid black; /* Specify the border color and width */
+    margin-top: -10px;
+}
+
+/* About Me text */
 .AMtext {
     display: flex;
+    flex-direction: column;
     align-items: center; /* Align text vertically with the image */
     padding: 20px;
-    text-align:justify;
-    margin-top:20px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .AMtext p {
     margin-left: 20px; /* Add some space between the image and text */
     font-size: 18px; /* Adjust font size as needed */
+    word-wrap: break-word; /* Ensure long words break properly */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .fixed-header {
+        padding: 10px;
+    }
+
+    .nav-container {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        top: 0;
+        justify-content: space-around;
+    }
+
+    .scrollable-content {
+        margin-top: 150px; /* Adjust margin for smaller screens */
+        padding-right: 0;
+    }
+
+    .game-box-inn {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 10px;
+    }
+
+    .AMimage {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: 200px; /* Maximum width for smaller screens */
+    }
+
+    .AMtext {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .AMtext p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-box-inn {
+        width: 95%; /* Ensure some margin for very small screens */
+        padding: 5px;
+    }
+
+    .AMimage {
+        width: 90%; /* Full width for very small screens */
+        max-width: 150px; /* Maximum width for very small screens */
+    }
+
+    .AMtext {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
 }
 
 
