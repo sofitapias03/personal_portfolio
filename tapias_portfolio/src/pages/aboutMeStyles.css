@@ -106,13 +106,7 @@ html, body {
         padding: 10px;
     }
 
-    .nav-container {
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-        top: 0;
-        justify-content: space-around;
-    }
+   
 
     .scrollable-content {
         margin-top: 150px; /* Adjust margin for smaller screens */
