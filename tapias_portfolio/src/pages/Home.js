@@ -164,9 +164,10 @@ const Home = () => {
           <div className="grid"></div>
           <div className="grid-red"></div>
         </div>
+        <NavBar/>
       </div>
       
-      <NavBar/>
+      
     </div>
   );
 };

@@ -11,7 +11,7 @@
   color:#F1E48E;
 
 }
-
+@media (min-width:0px){
 .nav-toggle {
   display: block;
   background: none;
@@ -24,6 +24,7 @@
   margin-top:-90px;
   left: -90px; /* Adjust to move the icon to the left */
   border-radius:5px;
+}
 }
 
 

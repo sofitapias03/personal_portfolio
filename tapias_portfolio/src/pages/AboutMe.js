@@ -42,8 +42,9 @@ const AboutMe = () => {
                         <div className="tile-content">E</div>
                         <div className="tile-number">1</div>
                     </div>
+                    <NavBar />
                 </div>
-                <NavBar />
+               
             </div>
             <div className="scrollable-content">
                 <div className="game-box-inn">
