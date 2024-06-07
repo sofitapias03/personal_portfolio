@@ -33,16 +33,27 @@ html, body {
 /* Scrollable content */
 .scrollable-content {
     margin-top: 100px; /* Adjust this to the height of your header */
-    padding-right: 220px; /* Adjust this to the width of your navbar */
+    padding: 0; /* Remove padding-right to avoid shrinking the scrolling area */
     overflow-y: auto;
     width: 100%;
-    height: calc(100vh - 80px); /* Adjust this to the height of your header */
+    height: calc(100vh - 100px); /* Adjust this to the height of your header */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0px;
     position: relative;
-}
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    z-index:2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .scrollable-content {
+      margin-top: 80px; /* Adjust this if your header height changes on mobile */
+      height: calc(100vh - 80px); /* Adjust this if your header height changes on mobile */
+    }
+  }
+  
 
 /* NavBar styling */
 .nav-container {
@@ -149,6 +160,9 @@ html, body {
         font-size: 14px; /* Smaller font size for very small screens */
     }
 }
+
+
+
 
 
 
